@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="margin-bottom:20px;"> Currency Converter</h2>
+        <div>
+            <p style="font-size : 18px">Enter Amount</p>
+            <input type="number" id = 'num'>
+        </div>
+        <div class="change">
+            <div class="flags">
+                <p style="margin: 0px 4px;">From</p>
+                <div class="innerdiv">
+                    <img src="https://flagsapi.com/US/flat/64.png" style="height: 30px;">
+                    <select name="From" style="border: none;outline: none;" id = 'fromcur'>
+                    </select>
+                </div>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left" style="font-size: 1.5em; margin-top: 18px;"></i>
+            <div class="flags">
+                <p style="margin: 0px 4px;">To</p>
+                <div class="innerdiv">
+                    <img src="https://flagsapi.com/IN/flat/64.png" style="height: 30px;">
+                    <select name="to" style="border: none; outline: none;" id = 'tocur'>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <p style="margin: 20px 0px;font-size: larger;" id = 'convert'>1 USD = 86.999 INR</p>
+        <button id = 'exchange'>GET EXCHANGE RATE</button>
+    </div>
+</body>
+<script src="codes.js"></script>
+<script src="scrpt.js"></script>
+</html>
